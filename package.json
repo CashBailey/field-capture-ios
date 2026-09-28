@@ -1,0 +1,19 @@
+{
+  "name": "field-capture-ios",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Legacy React Native parity workspace for the pure Swift Field Capture iOS app in apps/native.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format:check": "npm run format:check --workspaces --if-present",
+    "bundle:check": "npm run bundle:check --workspaces --if-present",
+    "mobile:start": "npm --workspace @fieldcapture/mobile run start",
+    "mobile:ios": "npm --workspace @fieldcapture/mobile run ios"
+  }
+}

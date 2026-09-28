@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Cancel superseded runs on the same ref.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: Legacy parity · Typecheck · Lint · Test · Bundle
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install (root lockfile, npm workspaces)
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Format check
+        run: npm run format:check
+
+      - name: Test (Jest app + Vitest contracts)
+        run: npm test
+
+      - name: Bundle check (iOS JS bundle)
+        run: npm run bundle:check
+
+  native:
+    name: Native Swift · Format · Test · iOS Build
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check Swift formatting
+        run: >-
+          xcrun swift-format lint
+          --configuration .swift-format
+          --recursive
+          --parallel
+          --strict
+          apps/native/FieldKit/Sources
+          apps/native/FieldKit/Tests
+          apps/native/FieldCapture
+
+      - name: Test FieldKit
+        run: swift test --package-path apps/native/FieldKit
+
+      - name: Build Field Capture Release for iOS Simulator
+        run: >-
+          xcodebuild
+          -project apps/native/FieldCapture.xcodeproj
+          -scheme FieldCapture
+          -configuration Release
+          -destination 'generic/platform=iOS Simulator'
+          CODE_SIGNING_ALLOWED=NO
+          build

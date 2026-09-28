@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		GA00000000000000000001A1 /* FieldContracts in Frameworks */ = {isa = PBXBuildFile; productRef = GA00000000000000000001B1 /* FieldContracts */; };
+		GA00000000000000000001A2 /* FieldData in Frameworks */ = {isa = PBXBuildFile; productRef = GA00000000000000000001B2 /* FieldData */; };
+		GA00000000000000000001A3 /* FieldDomain in Frameworks */ = {isa = PBXBuildFile; productRef = GA00000000000000000001B3 /* FieldDomain */; };
+		GA00000000000000000001A4 /* FieldRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = GA00000000000000000001B4 /* FieldRuntime */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		GA00000000000000000000F1 /* FieldCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		GA00000000000000000000E2 /* Exceptions for "FieldCapture" folder in "FieldCapture" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = GA00000000000000000000D1 /* FieldCapture */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		GA00000000000000000000E1 /* FieldCapture */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				GA00000000000000000000E2 /* Exceptions for "FieldCapture" folder in "FieldCapture" target */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = FieldCapture;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		GA00000000000000000000C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				GA00000000000000000001A1 /* FieldContracts in Frameworks */,
+				GA00000000000000000001A2 /* FieldData in Frameworks */,
+				GA00000000000000000001A3 /* FieldDomain in Frameworks */,
+				GA00000000000000000001A4 /* FieldRuntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		GA00000000000000000000A1 = {
+			isa = PBXGroup;
+			children = (
+				GA00000000000000000000E1 /* FieldCapture */,
+				GA00000000000000000000A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		GA00000000000000000000A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				GA00000000000000000000F1 /* FieldCapture.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		GA00000000000000000000D1 /* FieldCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = GA00000000000000000000B3 /* Build configuration list for PBXNativeTarget "FieldCapture" */;
+			buildPhases = (
+				GA00000000000000000000C1 /* Sources */,
+				GA00000000000000000000C3 /* Frameworks */,
+				GA00000000000000000000C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				GA00000000000000000000E1 /* FieldCapture */,
+			);
+			name = FieldCapture;
+			packageProductDependencies = (
+				GA00000000000000000001B1 /* FieldContracts */,
+				GA00000000000000000001B2 /* FieldData */,
+				GA00000000000000000001B3 /* FieldDomain */,
+				GA00000000000000000001B4 /* FieldRuntime */,
+			);
+			productName = FieldCapture;
+			productReference = GA00000000000000000000F1 /* FieldCapture.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		GA00000000000000000000A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					GA00000000000000000000D1 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = GA00000000000000000000B0 /* Build configuration list for PBXProject "FieldCapture" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = GA00000000000000000000A1;
+			packageReferences = (
+				GA00000000000000000001C1 /* XCLocalSwiftPackageReference "FieldKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = GA00000000000000000000A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				GA00000000000000000000D1 /* FieldCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		GA00000000000000000000C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		GA00000000000000000000C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		GA00000000000000000000B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				FIELD_APP_ENV = dev;
+				OPS_HUB_URL = "$(OPS_HUB_URL_LOCAL)";
+				OPS_HUB_URL_LOCAL = "http://opshub.local:8000";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		GA00000000000000000000B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				FIELD_APP_ENV = prod;
+				OPS_HUB_URL = "";
+				OPS_HUB_URL_LOCAL = "http://opshub.local:8000";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		GA00000000000000000000B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QH9HDBYN6A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FieldCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.fieldcapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		GA00000000000000000000B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QH9HDBYN6A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FieldCapture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.fieldcapture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		GA00000000000000000000B0 /* Build configuration list for PBXProject "FieldCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				GA00000000000000000000B1 /* Debug */,
+				GA00000000000000000000B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		GA00000000000000000000B3 /* Build configuration list for PBXNativeTarget "FieldCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				GA00000000000000000000B4 /* Debug */,
+				GA00000000000000000000B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		GA00000000000000000001C1 /* XCLocalSwiftPackageReference "FieldKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = FieldKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		GA00000000000000000001B1 /* FieldContracts */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FieldContracts;
+		};
+		GA00000000000000000001B2 /* FieldData */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FieldData;
+		};
+		GA00000000000000000001B3 /* FieldDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FieldDomain;
+		};
+		GA00000000000000000001B4 /* FieldRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FieldRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = GA00000000000000000000A0 /* Project object */;
+}

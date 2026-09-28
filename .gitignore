@@ -1,0 +1,89 @@
+# Field Capture — do not commit builds, secrets, local data, or generated artifacts.
+
+# Node / JS
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Only the ROOT lockfile is authoritative in this npm-workspaces monorepo; a per-workspace
+# lockfile is dead weight that `npm ci` ignores and a divergence trap. Block nested ones.
+apps/*/package-lock.json
+packages/*/package-lock.json
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Native builds
+ios/build/
+ios/Pods/
+**/.build/
+**/.swiftpm/
+apps/native/build/
+apps/native/build-*/
+apps/native/**/build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.ipa
+*.app
+*.dSYM.zip
+
+# EAS / store credentials — NEVER commit
+google-services.json
+GoogleService-Info.plist
+*.p8
+*.p12
+*.mobileprovision
+credentials.json
+eas-credentials*.json
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.cer
+secrets/
+certs/
+
+# Local databases / offline caches / generated payloads
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+trip-log/
+
+# Logs / diagnostics
+*.log
+logs/
+diagnostics/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Any private operational / employee / customer data must never be committed
+private-data/
+employee-data/
+customer-data/
+
+# Knowledge graph (graphify) — generated artifacts, do not commit
+graphify-out/
+
+# Adversarial-review scratch test files (underscore-prefixed) — never commit; they would pollute the
+# Vitest gate and tsc output. Real tests are never underscore-prefixed.
+**/test/_*.test.ts
+
+# Claude Code local tooling state / runtime locks (per-machine, not shared). If a curated
+# .claude/settings.json should ever be shared, force-add it explicitly (git add -f).
+.claude/
+tmp/

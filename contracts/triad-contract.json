@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "sync_op_types": ["field.note", "sr.update", "ticket.submit", "dvir.submit", "jhajsa.submit", "attachment.link", "print.event", "work.start", "location.evidence"],
+  "event_types": ["CHECK_IN", "CHECK_OUT"],
+  "nfc_auth_methods": ["desfire_aes128_protected_read"],
+  "nfc_auth_method_aliases": {
+    "DESFIRE_AES": "desfire_aes128_protected_read"
+  }
+}

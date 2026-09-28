@@ -1,0 +1,101 @@
+[
+  {
+    "coordinates": {
+      "primary": null,
+      "wells": []
+    },
+    "customer": {
+      "id": "cbaf53e3-a698-4209-bdc4-9aa8bae23975",
+      "name": "Acme Energy, LLC"
+    },
+    "disposal_site": null,
+    "geofence_hints": {
+      "radius_m": 250,
+      "required": false,
+      "source": ""
+    },
+    "job_type": {
+      "id": "11946f7f-49f7-4cce-b5f0-b2ea03d47dda",
+      "name": "Vacuum Haul"
+    },
+    "latest_server_version": "98ed8db1d6fae30e3cd8b8135bb611669a6e6c3e9aa96df2956ee8e174d9321e",
+    "lease": {
+      "id": "c95016cc-2b8a-460d-aaa8-34935b463722",
+      "name": "Northfield"
+    },
+    "material": {
+      "id": "671a4325-cf18-41e4-a787-c4f9c00122d5",
+      "name": "Produced Water"
+    },
+    "request_no": "2026-000001",
+    "service_request_id": "2fa77824-e9c0-48d8-b707-c9482084cee9",
+    "snapshot": {
+      "coordinates": {
+        "primary": null,
+        "wells": []
+      },
+      "customer": {
+        "id": "cbaf53e3-a698-4209-bdc4-9aa8bae23975",
+        "name": "Acme Energy, LLC"
+      },
+      "customer_name": "Acme Energy, LLC",
+      "disposal_site": "",
+      "disposal_site_ref": null,
+      "geofence_hints": {
+        "radius_m": 250,
+        "required": false,
+        "source": ""
+      },
+      "is_service": false,
+      "job_type": {
+        "id": "11946f7f-49f7-4cce-b5f0-b2ea03d47dda",
+        "name": "Vacuum Haul"
+      },
+      "lease": {
+        "id": "c95016cc-2b8a-460d-aaa8-34935b463722",
+        "name": "Northfield"
+      },
+      "lease_name": "Northfield",
+      "material": {
+        "id": "671a4325-cf18-41e4-a787-c4f9c00122d5",
+        "name": "Produced Water"
+      },
+      "material_type": "Produced Water",
+      "pad": "",
+      "task": "",
+      "vehicle": null,
+      "well_nos": ["114H"],
+      "wells": [
+        {
+          "api_number": null,
+          "field_name": "",
+          "id": "06f59e71-0ff0-4e3a-8b17-28472062f6c0",
+          "lat": null,
+          "lon": null,
+          "well_no": "114H"
+        }
+      ],
+      "workflow_requirements": {
+        "clock_in_required": true,
+        "required_steps": []
+      }
+    },
+    "snapshot_hash": "98ed8db1d6fae30e3cd8b8135bb611669a6e6c3e9aa96df2956ee8e174d9321e",
+    "status": "assigned",
+    "vehicle": null,
+    "wells": [
+      {
+        "api_number": null,
+        "field_name": "",
+        "id": "06f59e71-0ff0-4e3a-8b17-28472062f6c0",
+        "lat": null,
+        "lon": null,
+        "well_no": "114H"
+      }
+    ],
+    "workflow_requirements": {
+      "clock_in_required": true,
+      "required_steps": []
+    }
+  }
+]
